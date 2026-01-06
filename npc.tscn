@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsrfwwga5uq1a"]
+
+[ext_resource type="Texture2D" uid="uid://bg410b8u208ls" path="res://assets/oldman.png" id="1_kh24r"]
+[ext_resource type="Script" uid="uid://bjbjp1n43vapt" path="res://scripts/npc.gd" id="2_ul7y6"]
+[ext_resource type="Resource" uid="uid://cypnjqxy0vcf4" path="res://dialogue/cowboy1.dialogue" id="3_bc6q4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
+resource_local_to_scene = true
+size = Vector2(26.333334, 24.333334)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kh24r"]
+resource_local_to_scene = true
+size = Vector2(18.188316, 6.898346)
+
+[node name="NPCBody" type="CharacterBody2D"]
+scale = Vector2(3, 3)
+script = ExtResource("2_ul7y6")
+dialogue_resource = ExtResource("3_bc6q4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.4999998, 5.8333335)
+shape = SubResource("RectangleShape2D_272bh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.3333333, 13.333334)
+shape = SubResource("RectangleShape2D_kh24r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kh24r")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

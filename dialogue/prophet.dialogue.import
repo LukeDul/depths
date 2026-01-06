@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b5hmqkfb5tgml"
+path="res://.godot/imported/prophet.dialogue-c8f7be87c4a888c8a2a6973960f54b10.tres"
+
+[deps]
+
+source_file="res://dialogue/prophet.dialogue"
+dest_files=["res://.godot/imported/prophet.dialogue-c8f7be87c4a888c8a2a6973960f54b10.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,122 @@
+[gd_scene load_steps=16 format=3 uid="uid://cjf3yr1sg7dgs"]
+
+[ext_resource type="Script" uid="uid://o1okvay6cbt5" path="res://scripts/main.gd" id="1_0xm2m"]
+[ext_resource type="Resource" uid="uid://yid2fybg64mj" path="res://dialogue/old_man.dialogue" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b13cp3u24w1t8" path="res://assets/background.png" id="3_5vw27"]
+[ext_resource type="PackedScene" uid="uid://b6co76gfhm8r6" path="res://player.tscn" id="3_272bh"]
+[ext_resource type="Texture2D" uid="uid://brwbooe4i2myg" path="res://assets/beans-Sheet.png" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bsrfwwga5uq1a" path="res://npc.tscn" id="4_272bh"]
+[ext_resource type="Resource" uid="uid://b5hmqkfb5tgml" path="res://dialogue/prophet.dialogue" id="7_kek77"]
+[ext_resource type="Texture2D" uid="uid://dxr1drclp4amh" path="res://assets/tree.png" id="8_4c57u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
+resource_local_to_scene = true
+size = Vector2(60.64452, 51.689034)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kek77"]
+resource_local_to_scene = true
+size = Vector2(18.188316, 6.898346)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
+resource_local_to_scene = true
+size = Vector2(22.055561, 8.722221)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
+resource_local_to_scene = true
+size = Vector2(18.166668, 4.333332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
+atlas = ExtResource("4_7mycd")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kek77"]
+atlas = ExtResource("4_7mycd")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4c57u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vw27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kek77")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D"]
+scale = Vector2(6, 6)
+script = ExtResource("1_0xm2m")
+dialogue_resource = ExtResource("2_0xm2m")
+
+[node name="PrairieBackground" type="Sprite2D" parent="."]
+texture = ExtResource("3_5vw27")
+
+[node name="Node2D" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" parent="Node2D" instance=ExtResource("3_272bh")]
+position = Vector2(-31.666668, 59.666668)
+
+[node name="Cowboy" parent="Node2D" instance=ExtResource("4_272bh")]
+position = Vector2(173.33334, -60.5)
+scale = Vector2(1.5, 1.5)
+
+[node name="Cowboy2" parent="Node2D" instance=ExtResource("4_272bh")]
+position = Vector2(292.00006, -5.666664)
+scale = Vector2(1.5, 1.5)
+
+[node name="Cowboy3" parent="Node2D" instance=ExtResource("4_272bh")]
+position = Vector2(208.83334, 39.000008)
+scale = Vector2(1.5, 1.5)
+
+[node name="ProphetTree" parent="Node2D" instance=ExtResource("4_272bh")]
+position = Vector2(54.5, -103.00002)
+scale = Vector2(1.7834772, 1.7153864)
+dialogue_resource = ExtResource("7_kek77")
+
+[node name="Area2D" parent="Node2D/ProphetTree" index="0"]
+position = Vector2(5.833886, -2.2002404)
+
+[node name="CollisionShape2D" parent="Node2D/ProphetTree/Area2D" index="0"]
+position = Vector2(-0.98363113, 6.6068687)
+shape = SubResource("RectangleShape2D_5vw27")
+
+[node name="CollisionShape2D" parent="Node2D/ProphetTree" index="1"]
+position = Vector2(0.22686255, 3.3864486)
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="Sprite2D" parent="Node2D/ProphetTree" index="2"]
+position = Vector2(-1.9224981, -25.032814)
+texture = ExtResource("8_4c57u")
+
+[node name="Pot" parent="Node2D" instance=ExtResource("4_272bh")]
+position = Vector2(220.66672, -17.166668)
+
+[node name="Area2D" parent="Node2D/Pot" index="0"]
+position = Vector2(1.8055489, -1.7777777)
+
+[node name="CollisionShape2D" parent="Node2D/Pot/Area2D" index="0"]
+position = Vector2(-2.6389084, 8.75)
+shape = SubResource("RectangleShape2D_272bh")
+
+[node name="CollisionShape2D" parent="Node2D/Pot" index="1"]
+position = Vector2(-1.3889017, 7.499999)
+shape = SubResource("RectangleShape2D_4c57u")
+
+[node name="Sprite2D" parent="Node2D/Pot" index="2"]
+position = Vector2(1.8055489, -1.7777777)
+texture = null
+
+[node name="PotSprite" type="AnimatedSprite2D" parent="Node2D/Pot"]
+z_as_relative = false
+position = Vector2(0.33331984, 6.555556)
+scale = Vector2(0.16666667, 0.16666667)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+autoplay = "default"
+
+[editable path="Node2D/ProphetTree"]
+[editable path="Node2D/Pot"]

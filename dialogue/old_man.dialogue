@@ -1,0 +1,61 @@
+~ start
+Narrator: You are the little boy, lost in the prairie. 
+Narrator: You notice a glow in the distance. 
+~ choice
+Narrator: Go to it? 
+- Yes => approach_fire
+- No
+	Narrator: You wait, [wait=0.4] perhaps [wait=0.1]frozen in fear? 
+=> choice
+
+~ approach_fire
+Narrator: As you approach voices drift over you. 
+Old Man 1: Oh ho ho ho, so you dont know do ya. 
+Old Man 2: Well I've got some words for you. 
+Old Man 3: Blimy, boys, the beans are [wave]burnin[/wave].  
+Narrator:  You quietly make your way through the stiff bluestem grass. Finally reaching the clearing, you peak your head around a corner. Three grizzled grizzled panhandlers are sitting around a cast-iron pot thats bubbling away. They are arguing about who should have been watching the beans.
+Old Man 1: I told yous was tending to my bunion. 
+Old Man 2: [shake]DAMN[/shake] your bunion Joe. 
+Old Man 3: Blimy boys, don't bicker. The beans are still burning.   
+Narrator: The beans, in fact, were still burning. 
+Narrator: They finally quieted down, found an stick, and began stirring the poor beans. 
+Narrator: One of them pulled out some old metal mugs and the feasting began. 
+Narrator: You are famished. [wait=0.2] Are you afraid of them? 
+- Yes. 
+	Narrator: Poor thing. Perhaps fear will fill your tummy. 
+- No. 
+	Narrator: Atta' boy.  
+Narrator: What will you do?
+~ get_beans
+- Make a move for the pot.
+	Narrator: You step quietly over to the pot, where it is sitting behind their backs. You gingerly reach your hands towards it. 
+	You: [pulse]OW[/pulse]
+	Narrator: [shake][color=red]It's burning remember? [/shake]
+	Old Man 1: Looks like we got a little thief!
+	Old Man 3: Blimy boys, the night just gets better and better. 
+	Old Man 2: [shake]Grab him.[/shake]
+	Old Man 2: Looks like we found the weany for our beans. Cut him up. 
+	=> death
+	
+- Ask politely. 
+	You: Excuse me. 
+	Old Man 1: [shake]**Burb**[/shake] these are some [b]good[/b] beans boys.
+	Old Man 2: Mghh, they need some weanies. Can't have beanies without weanies. 
+	Old Man 3: Shut your trap. All you do is complain. 
+	Narrator: **they didn't hear you**
+	- Ask again, louder
+		You: [shake]EXCUSE ME![/shake]
+		Old Man 1: I heard a peep!
+		Narrator: They turn and face you. 
+		Old Man 2: Why its a young genteelman. 
+		Old Man 3: Howdy boyuh. 
+		Old Man 1: What can we do you for youngin. 
+		You: I so hungry 
+		Old Man 2: Your after our beans then. Everyones always after our beans. YOU CANT HAVEM. THER OURS!!
+		Narrator: He lunges at you. 
+	- Try something else => get_beans
+=> END
+
+~ death
+Darkness: The king of yellow. 
+=> END 

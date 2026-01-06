@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://b6co76gfhm8r6"]
+
+[ext_resource type="Script" uid="uid://c3bt4a75p5wdt" path="res://scripts/player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://ervsuk0x5o2p" path="res://assets/player-Sheet.png" id="2_i3pqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+size = Vector2(19.666668, 7.666667)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
+atlas = ExtResource("2_i3pqv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_272bh"]
+atlas = ExtResource("2_i3pqv")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5vw27"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7mycd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_272bh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5vw27"]
+
+[node name="Player" type="CharacterBody2D"]
+z_as_relative = false
+script = ExtResource("1_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.16666651, 12.333334)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5vw27")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="InteractionArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2D"]
+position = Vector2(0, 1.8333334)
+shape = SubResource("CapsuleShape2D_5vw27")
+
+[node name="InteractionLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_right = 40.0
+offset_bottom = 17.0
+text = "Act?"
+
+[connection signal="area_entered" from="InteractionArea2D" to="." method="_on_interaction_area_2d_area_entered"]
+[connection signal="area_exited" from="InteractionArea2D" to="." method="_on_interaction_area_2d_area_exited"]

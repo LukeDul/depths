@@ -1,0 +1,31 @@
+# Prophet in a tree, predicting wildfire. 
+~ start 
+set Globals.is_player_frozen = false 
+????: Pssst. 
+- Follow the sound. => tree
+- Ignore it. => prairie
+
+ ~ tree
+Narrator: The sound came from the [[east|west]]. 
+????: Ahhh yesss. Come ye hither. 
+Narrator: The voice is coming from a tree.
+????: Closer now, sos I can better see thou. 
+????: Ahhhh yessss. I know who thou art. Ye arnt no simple varmint. 
+????: I have a warning for ye. 
+Narrator: The tree starts shaking and bending side to side. 
+????: [shake]BEWARE THE FALSE SUNRISE. 
+????: [shake]WITHIN THREE DAYS IT WILL COME. 
+????: [shake]YOU WILL KNOW IT FROM ITS RED GLOW. 
+????: [shake]IT WILL STRIKE QUICKLY. 
+????: [shake]MEN WILL SEEK DEATH AND NOT FIND IT. 
+- First one
+	Nathan: You picked the first one.
+- Second one
+	Nathan: You picked the second one.
+- Start again => start
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END
+
+~ prairie 
+=> END

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cypnjqxy0vcf4"
+path="res://.godot/imported/cowboy1.dialogue-95a88f0a9c419cfa3804cdd1d0028c94.tres"
+
+[deps]
+
+source_file="res://dialogue/cowboy1.dialogue"
+dest_files=["res://.godot/imported/cowboy1.dialogue-95a88f0a9c419cfa3804cdd1d0028c94.tres"]
+
+[params]
+
+defaults=true
