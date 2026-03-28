@@ -1,6 +1,7 @@
 class_name Player extends CharacterBody2D
 
 var SPEED = 1000
+var last_direction := "down"
 var nudge_resource: DialogueResource
 
 @onready var interaction_label: Label = %InteractionLabel
@@ -32,23 +33,28 @@ func _physics_process(_delta: float) -> void:
 	if Globals.is_player_frozen: return 
 	
 	var new_vel = Vector2.ZERO
-	
+	var target_anim := "idle_" + last_direction
+
 	if Input.is_action_pressed("move_up"):
 		new_vel.y -= SPEED
-		$AnimatedSprite2D.play("walk_up")
+		last_direction = "up"
+		target_anim = "walk_up"
 	elif Input.is_action_pressed("move_down"):
 		new_vel.y += SPEED
-		$AnimatedSprite2D.play("walk_down")
+		last_direction = "down"
+		target_anim = "walk_down"
 	if Input.is_action_pressed("move_right"):
 		new_vel.x += SPEED
-		$AnimatedSprite2D.play("walk_right")
+		last_direction = "right"
+		target_anim = "walk_right"
 	elif Input.is_action_pressed("move_left"):
 		new_vel.x -= SPEED
-		$AnimatedSprite2D.play("walk_left")
-	
-	if new_vel == Vector2.ZERO:
-		$AnimatedSprite2D.stop()
-		
+		last_direction = "left"
+		target_anim = "walk_left"
+
+	if $AnimatedSprite2D.animation != target_anim:
+		$AnimatedSprite2D.play(target_anim)
+
 	velocity = new_vel
 	
 	move_and_slide()

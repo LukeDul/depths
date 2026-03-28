@@ -13,15 +13,17 @@ z_as_relative = false
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=37456835]
-position = Vector2(0.16666651, 12.333334)
+position = Vector2(1.2916665, -10.041666)
 shape = SubResource("RectangleShape2D_7dm0k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=507280801]
-scale = Vector2(0.02, 0.02)
+position = Vector2(1.125, -22.375)
+scale = Vector2(0.25, 0.25)
 sprite_frames = ExtResource("2_onrkg")
-animation = &"walk_up"
+animation = &"idle_down"
 
 [node name="InteractionArea2D" type="Area2D" parent="." unique_id=579749191]
+position = Vector2(1.125, -22.375)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea2D" unique_id=972101955]
 position = Vector2(0, 1.8333334)
@@ -29,15 +31,18 @@ shape = SubResource("CapsuleShape2D_5vw27")
 
 [node name="InteractionLabel" type="Label" parent="." unique_id=2011633214]
 unique_name_in_owner = true
-offset_right = 40.0
-offset_bottom = 17.0
+offset_left = 1.125
+offset_top = -22.375
+offset_right = 41.125
+offset_bottom = 0.625
 text = "Act?"
 
 [node name="NudgeButton" type="Button" parent="." unique_id=595989446]
 unique_name_in_owner = true
-offset_top = -23.0
-offset_right = 8.0
-offset_bottom = -15.0
+offset_left = 1.125
+offset_top = -45.375
+offset_right = 9.125
+offset_bottom = -37.375
 
 [connection signal="area_entered" from="InteractionArea2D" to="." method="_on_interaction_area_2d_area_entered"]
 [connection signal="area_exited" from="InteractionArea2D" to="." method="_on_interaction_area_2d_area_exited"]
