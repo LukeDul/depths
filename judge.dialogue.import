@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d05vuft8we5s0"
+path="res://.godot/imported/judge.dialogue-041111b3e37acca2c18ca52ddb816785.tres"
+
+[deps]
+
+source_file="res://judge.dialogue"
+dest_files=["res://.godot/imported/judge.dialogue-041111b3e37acca2c18ca52ddb816785.tres"]
+
+[params]
+
+defaults=true

@@ -8,5 +8,4 @@ func _ready() -> void:
 	pass
 
 
-	
 # DialogueManager.show_dialogue_balloon(dialogue_resource, "start")

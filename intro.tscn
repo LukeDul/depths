@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://lwic6rkntpj1"]
+
+[ext_resource type="Script" path="res://intro.gd" id="1_intro"]
+
+[node name="Intro" type="Node2D" unique_id=1898733404]
+script = ExtResource("1_intro")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=627015009]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1172276836]
+offset_left = -1008.0
+offset_top = -644.0
+offset_right = 1083.0
+offset_bottom = 596.0
+
+[node name="Label" type="Label" parent="." unique_id=1457451975]
+offset_left = -275.0
+offset_top = -167.0
+offset_right = 321.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "INTRO SCENE"

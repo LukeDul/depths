@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c7qj71bj0j7f6"
+path="res://.godot/imported/nudge_test.dialogue-a5ec59d026ab173f0a50d5fa61c5ac18.tres"
+
+[deps]
+
+source_file="res://dialogue/nudge_test.dialogue"
+dest_files=["res://.godot/imported/nudge_test.dialogue-a5ec59d026ab173f0a50d5fa61c5ac18.tres"]
+
+[params]
+
+defaults=true

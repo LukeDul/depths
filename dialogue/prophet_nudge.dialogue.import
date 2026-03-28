@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://o4aewyqyaxyg"
+path="res://.godot/imported/prophet_nudge.dialogue-30c8d428487f6c9295b8dd0411d8d9a7.tres"
+
+[deps]
+
+source_file="res://dialogue/prophet_nudge.dialogue"
+dest_files=["res://.godot/imported/prophet_nudge.dialogue-30c8d428487f6c9295b8dd0411d8d9a7.tres"]
+
+[params]
+
+defaults=true

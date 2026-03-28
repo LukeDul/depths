@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="dialogue"
-run/main_scene="uid://cjf3yr1sg7dgs"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/name="depths"
+run/main_scene="uid://lwic6rkntpj1"
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
 [autoload]
@@ -20,10 +24,6 @@ config/icon="res://assets/icon.svg"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Bus="*res://bus.gd"
 Globals="*res://globals.gd"
-
-[dialogue_manager]
-
-runtime/balloon_path="uid://d0xr0r3wl33uv"
 
 [display]
 
@@ -34,10 +34,6 @@ window/stretch/mode="canvas_items"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
-
-[gui]
-
-theme/custom_font="uid://c64eys5yr38mg"
 
 [input]
 
@@ -69,7 +65,7 @@ touch={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/old_man.dialogue", "res://dialogue/cowboy1.dialogue", "res://dialogue/prophet.dialogue", "res://dialogue/blank.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/blank.dialogue", "res://dialogue/cowboy1.dialogue", "res://dialogue/old_man.dialogue", "res://dialogue/prophet.dialogue", "res://dialogue/nudge_test.dialogue", "res://dialogue/prophet_nudge.dialogue", "res://judge.dialogue")
 
 [rendering]
 

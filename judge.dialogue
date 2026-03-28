@@ -1,0 +1,48 @@
+# the judge and the boy. 
+~ start
+Judge: Why hello. You seem lost. 
+You: I am not lost.
+Judge: Well what are you doing out on the mother prairie? 
+You: Going elsewhere, where my dad aint. 
+Judge: Heh heh heh. I had a similar inclination at your age, just went about it a different way. Heh heh.
+Judge: Tell you what, why don't you tell me where your old pappy is and I'll give him a talking to. I'll tell him no more chores for you, fried donuts every day and you can sleep till noon. 
+Judge: Come on, wadya say?
+- Tell the pale man where you live. => murder
+- Refuse. => flight 
+
+~ flight 
+Judge: You don't want to go back eh. Thats your house boy. Soon enough you'll see the world for what it is. The longer it takes, the more you will suffer. 
+Judge: I won't try to convince you. I can see your yellow belly.
+Judge: But, since I offered you a gift, its only polite that you offer me something, for the sake of propriety of course. I would not ask but manners are so dear to me. 
+Judge: What do you have for me boy?
+- Im not givin you nothing. 
+	Judge: I hate to be uncouth but I won't let you go until I get whats mine. For propriety, you must understand. 
+	You: What do you want? I ain't got nothing 'cept the clothes on my back. 
+	Judge: You still got yourself. Let me have a look at your eyes and you will be free to go. 
+	- Let him => eyes
+	- Run
+	Narrator: He flicks out his leg and trips you before you can make more than two steps. He holds you up by your shirt. 
+	Judge: I HATE BAD MANNERED BOYS. I SEE NOW WHY YOUR PAPPY BEAT YOU. 
+	Judge: LOOK INTO MY EYES BOY OR I'LL ROAST YOU OVER THIS HERE FIRE. 
+	- Look into his eyes => eyes
+	- Shut eyes
+		Narrator: He drags you over to the fire and starts to push you into it. 
+		- Keep eyes shut. 
+			Narrator: He is true to his word. He roasts you til crisp. 
+		- Open eyes and look at him => eyes
+- Look through pockets. 
+	Narrator: You find northing except a dime of stale jerky. 
+- Offer service. 
+	You: Lemme join your posse. 
+=> END
+
+~ eyes
+Judge: Heh heh. You got an interstin future before ya. 
+Judge: Aahahahh, your great grandson will father the Hydrogen bomb. I think I'll let ya go. 
+Judge: Go on now, before I change my mind. 
+=> END
+
+~ murder
+You: I been heading north for about two days now so the homestead is south that same distance. I doubt hes even home, I bet hes lookin all over for me. 
+Judge: No he aint. Hes sittin pretty in a big rockin chair. Come on, you will come with me and we will pay him a visit together.
+=> END
