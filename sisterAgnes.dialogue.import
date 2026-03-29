@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cu2gds677tvda"
+path="res://.godot/imported/sisterAgnes.dialogue-cc3f798702c84f663fddeb798e2f85ea.tres"
+
+[deps]
+
+source_file="res://sisterAgnes.dialogue"
+dest_files=["res://.godot/imported/sisterAgnes.dialogue-cc3f798702c84f663fddeb798e2f85ea.tres"]
+
+[params]
+
+defaults=true

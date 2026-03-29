@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cpmlcbt876pu0"
+path="res://.godot/imported/coworker.dialogue-02afc7677e5a98186f17ddb70a958f9d.tres"
+
+[deps]
+
+source_file="res://dialogue/coworker.dialogue"
+dest_files=["res://.godot/imported/coworker.dialogue-02afc7677e5a98186f17ddb70a958f9d.tres"]
+
+[params]
+
+defaults=true

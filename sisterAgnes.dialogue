@@ -1,0 +1,50 @@
+~ start
+Agnes: Hello, sister.  We finally have the chance to talk to each other again.
+{{player_name}}: Hello, Agnes.  I want to say that I’m so unbelievably sorry for my horrible choices that I’ve made in the past.  I’ve heard that you're dying–I need to save you from this place!
+Agnes:  That’s very kind of you, sister.  I thank you for your apology.  I think you have had a wonderful change of heart from how you acted in the mortal plane.  But it’s not enough to save me, not now–not with how closely I feel death's clutches.
+{{player_name}}: Agnes, you’re fading away.  No!  What can I do!?
+Agnes: And so are you, sister.  I need you to tell me specific details of both the event and your life which led us both down here.  Only when all is made clear can we put a stop to death’s attacks.
+{{player_name}}: Ok, ok!  What do I have to say?
+Agnes: I will ask you questions about the incident, ones that I haven’t made–they were given to me by fate, so I have to say each one.
+Agnes: First!  What was the cause of your worsening mind before the car crash?  You were getting very angry, sister, because of all sorts of things, but what was the main cause?
+- I had a heavy addiction.
+	Agnes: Yes!  Those weird pills were clouding your mind.  Your friends were not good role models, but I always saw you messing yourself up each and every day because of your addiction.  You were really hurting the whole family, and I was incredibly worried and mad at you because of it.
+	{{player_name}}: And I am very, very sorry for that!  I see now how wrong I’ve been.
+	Agnes: I forgive you, but now I need to ask the second question! What is the special color I love so much?  I think it was the color of the night sky when you crashed the car.
+- The color is midnight blue.
+	Agnes: No, no! That’s wrong.  Oh… oh no!
+	{{player_name}}: What is it Agnes, w-what can I do!?  
+	Agnes: Nothing, sister, it’s all over!  I can’t hold to this form much longer… I feel the weight of death, it’s… it’s too heavy!
+	Agnes: I… I’m free now.  A full spirit, free to wander this plane.  I’ll wait here for you, sister, and for mom and dad, too.
+	{{player_name}}: No, I’ve failed you completely!  I just wanted to help save you from this fate.  I’ve killed you, this was my fault!  I’m so… so sorry, Agnes.
+	Agnes: I forgive you, sister.  After what you have seen and what we have talked about, I fully forgive you.  I love you, sister.
+	{{player_name}}: I love you, Agnes.
+	Agnes: See you later, my sister.  Tell mom and dad that I love them too!
+	{{player_name}}: I will!  Goodbye!
+=> END
+
+- The color is indigo.
+	Agnes: Yes, yes!  I love indigo, it is so beautiful.  I’m glad that even before the bad crash, I got to see my favorite color in the sky.
+	{{player_name}}: I am getting very, very worried, Agnes!  I must free you.   What’s the next question?
+	Agnes: One more, sister, only one more!  What is the reason I am here but still alive, and the reason that you are visiting me?
+	- You are being supernaturally held in limbo, so that I can save you by destroying my bad habits.
+		Agnes: No, no! That’s wrong.  Oh… oh no!
+		{{player_name}}: What is it Agnes, w-what can I do!?  
+		Agnes: Nothing, sister, it’s all over!  I can’t hold to this form much longer… I feel the weight of death, it’s… it’s too heavy!
+		Agnes: I… I’m free now.  A full spirit, free to wander this plane.  I’ll wait here for you, sister, and for mom and dad, too.
+		{{player_name}}: No, I’ve failed you completely!  I just wanted to help save you from this fate.  I’ve killed you, this was my fault!  I’m so… so sorry, Agnes.
+		Agnes: I forgive you, sister.  After what you have seen and what we have talked about, I fully forgive you.  I love you, sister.
+		{{player_name}}: I love you, Agnes.
+		Agnes: See you later, my sister.  Tell mom and dad that I love them too!
+		{{player_name}}: I will!  Goodbye!
+		do set_ending(2)
+		=> END
+	- You are in a coma, and I am visiting you due to my guilt from causing it.
+		Agnes: Yes, that’s correct, sister!  I’m.. I’m free… I feel death moving away from me.
+		{{player_name}}: Yes, I’ve done it!
+		{{player_name}}: Thank you Agnes.  Thank you for teaching me what I was so wrong about in life.  I’m so sorry about all of this, but I’m so glad that I saved you.  I love you so much, and see you on the other side!
+		Agnes: I love you, sister.  See you soon!	
+		do set_ending(1)
+		=> END
+
+ 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bwabb0qfoa1me"
+path="res://.godot/imported/friendalyssa.dialogue-fed0c12099381fcfa8715931ff51d8b3.tres"
+
+[deps]
+
+source_file="res://friendalyssa.dialogue"
+dest_files=["res://.godot/imported/friendalyssa.dialogue-fed0c12099381fcfa8715931ff51d8b3.tres"]
+
+[params]
+
+defaults=true

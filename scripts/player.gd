@@ -12,6 +12,8 @@ var hasMirror := false:
 		if v: $Button.visible = true 
 		else: $Button.visible = false 
 
+var hairColor = 0 # 0-6 
+
 #region Defaults
 func _ready() -> void:
 	interaction_label.hide()
@@ -27,6 +29,14 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("touch"):
 		Bus.player_interacted.emit()
+
+func _on_dialogue_started(_resource) -> void:
+	Globals.is_player_frozen = true
+	$AnimatedSprite2D.pause()
+
+func _on_dialogue_ended(_resource) -> void:
+	Globals.is_player_frozen = false
+	$AnimatedSprite2D.play()
 
 
 func _physics_process(_delta: float) -> void:
@@ -62,13 +72,13 @@ func _physics_process(_delta: float) -> void:
 
 
 #region Signals
-func _on_dialogue_started(_resource: DialogueResource):
-	print("started dialogue!")
-
-
-func _on_dialogue_ended(_resource: DialogueResource):
-	Globals.is_player_frozen = false 
-	print("ended dialogue!")
+#func _on_dialogue_started(_resource: DialogueResource):
+	#print("started dialogue!")
+#
+#
+#func _on_dialogue_ended(_resource: DialogueResource):
+	#Globals.is_player_frozen = false 
+	#print("ended dialogue!")
 
 
 func _on_nudge_button_pressed() -> void:

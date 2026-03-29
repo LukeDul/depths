@@ -14,3 +14,5 @@ signal unnudged()
 signal disco_available(verb: String)
 
 signal disco_unavailable()
+
+signal player_hit()

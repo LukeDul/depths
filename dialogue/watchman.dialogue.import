@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ds1x6l0q3mxwk"
+path="res://.godot/imported/watchman.dialogue-9a6d425dbd97a044e63961bbf3a93503.tres"
+
+[deps]
+
+source_file="res://dialogue/watchman.dialogue"
+dest_files=["res://.godot/imported/watchman.dialogue-9a6d425dbd97a044e63961bbf3a93503.tres"]
+
+[params]
+
+defaults=true

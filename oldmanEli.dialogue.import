@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ivkd7e52motv"
+path="res://.godot/imported/oldmanEli.dialogue-0efaffc4101af3e07b3228cb2415b317.tres"
+
+[deps]
+
+source_file="res://oldmanEli.dialogue"
+dest_files=["res://.godot/imported/oldmanEli.dialogue-0efaffc4101af3e07b3228cb2415b317.tres"]
+
+[params]
+
+defaults=true

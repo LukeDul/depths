@@ -1,0 +1,7 @@
+~ start
+{{player_name}}: These look like sleeping pills.
+- take one
+	{{player_name}}: [wave amp=30 freq=3] What a strange sensation. It feels…familiar. Did I used to take these? I must have had sleep problems. [/wave]
+- do not
+	{{player_name}}: I should stay focused.
+=> END 

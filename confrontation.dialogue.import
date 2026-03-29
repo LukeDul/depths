@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://fixxngdkag0l"
+path="res://.godot/imported/confrontation.dialogue-df02643b310c5dbc9ed26de24f281728.tres"
+
+[deps]
+
+source_file="res://confrontation.dialogue"
+dest_files=["res://.godot/imported/confrontation.dialogue-df02643b310c5dbc9ed26de24f281728.tres"]
+
+[params]
+
+defaults=true

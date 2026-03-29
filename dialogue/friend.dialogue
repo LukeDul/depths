@@ -1,0 +1,55 @@
+Alyssa:
+~ start
+Alyssa: Why are you here?  You haven’t earned your escape.
+{{player_name}}: Alyssa–what happened to you?
+Alyssa: Oh, I think you remember.  Illness is an indiscriminate killer, and I was unlucky enough to be captured in its clutches relatively early in my life.  It’s by no means the worst down here, however.
+{{player_name}}: This place is so dreary, though.  I feel a deep wrongness just being here.
+Alyssa: It’s not all like this.  This vast land you find yourself in is but a tiny fragment of this whole plane.  This fragment–yours–is shaped, colored and formed by your soul and memory.  What’s truly dreary is you.
+{{player_name}}: …
+Alyssa: But all-in-all, I’m just surprised you remember my name.  This is entirely fitting, though.  I should have expected you would at least remember that.
+{{player_name}}: Oh… I’m sorry, Alyssa, for how I treated you.  Please understand this, please…
+Alyssa: It seems a little late for that, however much I still appreciate it.  You became worse after I left, I think–based on what I’ve seen of the mortal plane from down here.  You got deeper into your addictions just to fit in with those wretched souls who tore our friendship asunder.
+{{player_name}}: I-I enjoyed spending time with them…
+Alyssa: Did you?  Really?  Or was it their access to those damned substances that kept you sticking with them?
+- I really did enjoy their friendship.
+	Alyssa: Always the excuses with you, eh?  I remember when you started down this path.  I saw where it took you, and when you cast me out and left me behind–me who was your friend since we both learned to walk!  I was already going through a bad time after my father left, and you never apologized to me before I moved away.
+	{{player_name}}: I just wanted to be more popular with the others, and I failed to think of you.  I messed things up, so, so deeply!  I know that now.  Please understand that.
+	Alyssa: Those people are not what really matters at this point.  I get that you’ve moved on.  It’s your addictions, worsened under those fools, that led me to this conversation with you.
+	{{player_name}}: Why do you care so much about my addiction?  I’ve been trying to slowly ween off of it for a while now, and I think I’ve been succeeding, though I still allow myself a bit from time to time…
+	Alyssa: It’s human life that I care about!  Your addiction may very well have cost a young life, one younger and far kinder than me, or you.
+	{{player_name}}: Cost a life?  Well, then what can I do in this place to fix it?  I can’t stand here doing nothing! 
+	=> pathB
+- It’s true, I wanted to feed my addictions.
+	Alyssa: Indeed you did–I’m glad you admit it openly–but step back and look where it got you!  I was so lonely after my family moved away, and once I arrived down here after I lost my battle with illness, I had discovered how quickly those new “friends” abandoned you.
+	{{player_name}}: They were terrible people, I agree.  I should have known better than to make friends with the likes of them.
+	Alyssa: And you did know better.  You heard the good from within your soul, but you didn’t heed its warnings.
+	{{player_name}}: I was confused and angry, and my family was in a bad place with work and finances.  I just wanted to feel relaxed.
+	Alyssa:  But you fell far too much, far too quickly.  In fact, may I add that it's your addiction that led to you visiting this plane in the first place.  And it's likewise your addiction that enslaved and drove you to awful acts.
+	{{player_name}}: My mental state was–
+	Alyssa: Just listen to me!  You have been almost entirely destroyed by it, and that’s why I am speaking to you.  Break your chains, and lay this all to rest.  Kill the addiction, rip it out, destroy it!  Let this be a wake-up call to you that another is now at great risk due to your ineptitude and enslavement.
+	{{player_name}}: That’s all in the mortal world, though, Alyssa!  What can I do in this place to help get out of here and solve the problem?
+	=> pathB
+- I was in a bad place, and didn’t know what I was doing.
+	Alyssa: So was I, idiot.  But you had plenty of chances to get away from those fools, and you chose to stick with them time and time again.  I think you know why you did, and it wasn’t for them.  It was what those assholes had access to that you really wanted.
+	{{player_name}}: …
+	Alyssa: And look at where that access got you.  You were quickly abandoned by your “new friends” and your addictions worsened.  You almost entirely forgot about me, and never apologized–not until earlier in this conversation.
+	{{player_name}}: But why are you here to see me?  Why are you willing to go to this sad place, clouded by the darkness from my own soul?
+	Alyssa: I’m here because I was fated to be.  You won’t understand it until you earn your escape, and you’re far, far too young for that.  That much I’ll share.
+	{{player_name}}: Can you tell what must I do to fix this darkness?
+	Alyssa: You must think back, and face your past.
+	=> pathB  
+
+~ pathB
+When you committed that terrible, terrible deed, the night’s shade was of a hopeful hue–not from the color itself, but from the one who loved it.  What color was it?
+-It was midnight blue.
+Alyssa: So, you really have forgotten, haven’t you.  You think so little about such important things!  I don’t wish to speak to you anymore.  I appreciate your apology, but here we must part ways.  All I can say is good luck.
+{{player_name}}: I’m so sorry, Alyssa.  I’ll try to make things right, for your sake…
+=> END
+-It was indigo.
+Alyssa: True indeed.  The good in you yet shines, it would seem, buried deep though it is.  Seek it out, and fix this.  Her life is riding on your actions, so don’t mess this up.  I don’t want her to become a permanent resident down here this early.  
+Alyssa: And also… I forgive you, old friend.  Please do remember that once you leave this land.  Now, go!  We’ll catch up again in the future, when it is your true time to come here!
+=> END
+-It was navy blue.
+Alyssa: So, you really have forgotten, haven’t you.  You think so little about such important things!  I don’t wish to speak to you anymore.  I appreciate your apology, but here we must part ways.  All I can say is good luck.
+{{player_name}}: I’m so sorry, Alyssa.  I’ll try to make things right, for your sake…
+=> END

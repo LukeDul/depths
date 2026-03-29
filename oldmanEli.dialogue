@@ -1,0 +1,44 @@
+Old Man Eli:
+~ start
+Old Man Eli: Greetings, {{player_name}}, child.  How wonderful it is to see another of your family again.
+{{player_name}}: M-mister Eli?  What are you doing here?
+Old Man Eli: Oh, you know already, do you not?  You should recall that half a decade–to phrase it in terms of mortal time–prior to now, I slipped into my eternal slumber.  Worry not about me–it is peaceful here.  Peaceful, mysterious, and vast.  I occasionally will visit the darker reaches of this plane, as I am doing right now!
+{{player_name}}: I haven’t seen you in so long, Mr. Eli.  But how did I chance upon finding you in this place, given its size?  And what have you been doing here since you passed?
+Old Man Eli: Ah, questions, questions, my child.  In the world of mortals, you were the same way!  But never mind the chances of it all, or how I while away the eternities down here–you have found me because you must.
+{{player_name}}: I must?  As in, this encounter was fated?
+Old Man Eli: Yes, should you wish to put it as such.  Know that I have waited in this particular place for your arrival; someone special to us both wishes for you to answer an inquiry.
+{{player_name}}: What is this ‘inquiry’?  
+Old Man Eli: I believe you should first ask who wishes it answered–the kind soul who passed this quaint little duty into my hands.
+Old Man Eli: Deep down, I believe you know quite well who such a soul would be, and the very path you walk now brings you ever closer to that truth.  So, do you?
+- I don’t know this person.
+	Old Man Eli: So that’s that, then.  Well my child, I hope for your own soul’s sake that you find the answers you seek.  You stand on brink of life and death, and it remains in your power to fix things.  Have courage.
+	=> END
+- I wish to know this person.
+	Old Man Eli: Oh, but as I’ve said, you already do!  Though your heart seems to be in the right place, you must search the depths of your memory as well as that which you have uncovered during your journey here.
+	=> pathX
+	
+~ pathX
+Old Man Eli: Think it over, and then answer.  Who is this kind soul of which I speak?
+- It’s my old friend, Alyssa.
+	Old Man Eli: No, no, kind though she may be.  She’s a stern one, that Alyssa, unafraid to speak her mind.  Her heart is very much in the right place, though, despite her aggression.  But alas, she’s not the specific soul who sent me here.
+	=> pathX
+- It’s myself… my living self.
+	Old Man Eli: That would be awfully odd, now wouldn’t it.  You would be two-souled, one sending me to speak to the other!  The larger problem, however, is that you have not been particularly kind to others in the mortal world for the past few years, I am sorry to say.  Such a paradoxical answer is undoubtedly incorrect!
+	=> pathX
+- It’s a sibling.
+	Old Man Eli: So you have remembered Agnes, haven’t you?  Good!  She is the one who sent me to you. Do you recall when she ran from your home all the long way over to my house?  Your parents tasked you with driving over to retrieve her.
+{{player_name}}: Yes, it’s coming back to me.  I felt especially unwell that day.
+Old Man Eli: Indeed, but you went nonetheless.  I noticed your sour mood when you picked up your sister.  You seemed out of it, but I couldn’t quite know for sure.  In hindsight, you seemed to be under the influence of something–an addiction of some kind, perhaps?
+{{player_name}}: Yes, Mr. Eli.  I didn’t think much of it at the time; I was used to the feeling it gave me, and though sad to say, I was glad to feel its hold on me.
+Old Man Eli: And that crash on your drive home–you were driving when you were absolutely unfit to do so!  You barely paid any price, but Agnes… Agnes nearly paid with her life.
+{{player_name}}: …I know.  I made a terrible, terrible mistake, and I must set things right.  
+Old Man Eli: Agnes is dying, my child.   Your failings have led her to such a state.
+{{player_name}}: I have felt this guilt weighing on me for so long, you see it in the darkness of this place–what must I do?
+Old Man Eli: The answer is simple, really.  You must speak to her, and soon!  Agnes waits ahead, and you must mend the bond between you two–a bond torn because of your forgetting what truly matters.  You must put family over your own selfish comforts.  And I don’t wish to see either of you young’uns join me here for a long time–you’ve both much good to do in the mortal plane!
+{{player_name}}: Thank you, Mr. Eli.
+Old Man Eli: You’re very welcome.  Good luck!
+=> END
+- I don’t know.
+	Old Man Eli: That’s no way to respond to such a pressing question, young lady!  Think it over, my child.  There must have been someone who came to mind during your wanderings in this perilous place.
+=> pathX
+

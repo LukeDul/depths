@@ -1,0 +1,42 @@
+~ start
+Rick: Woah man, who are you?
+{{player_name}}: Wait a minute, I could be asking you the same question.  You look familiar, but I can’t put my finger on it…
+Rick: Neither can I!  Then again, my brain has not been as well-trained as it usually is since I passed away.
+{{player_name}}: Wait a minute, that tag on your vest, you worked at Grubway.  So did I!  You’re, um… uh…
+Rick: Rick’s the name, my friend!  As you noticed, even in the underworld I’m wearing my standard-issue Grubway uniform.  I think it’s because I died while wearing it, which is pretty uncool in my books.
+{{player_name}}: Oh yes, Rick!  I’m beginning to remember you.  What happened to you?
+Rick: It was a tragic and epic forklift accident, man.  I was moving some giant food crates in the product warehouse, when I grabbed one from a rather gnarly angle.  One fell on me, and I died there and then.  Bummer, dude!
+{{player_name}}: You don’t sound too distraught about dying.  Why?
+Rick: I liked the mortal world, but this one’s kinda sweet too, man!  I can explore these endless lands and just vibe out.  This specific one’s pretty dark though, so I’m not the biggest fan.
+Rick: I remember you too, though.  I remember seeing you sometimes in the workplace.
+{{player_name}}: Yeah, we did work together on occasion.  But I don’t know why I’m here in this dark place.
+Rick: I would say you’re dead, but you’re clearly not–you’re not entirely faded, and looking all faded-out and see-through is the mark of being an awesome ghost, man!  You’re alive, but close enough to death to visit this place, which is pretty wild.
+{{player_name}}: What should I be looking for?
+Rick: Well, that gnarly-looking Watchman dude you saw earlier?  He brings people here for a reason, and sometimes folk like you show up; limbo-types who are in between planes.  You have to learn some radical truth or fact to get out–so I’ve heard–but that’s all above my pay-grade, man.
+{{player_name}}: Is there anything you can tell me to help me get out?
+Rick: Well, I have an idea based on what I remember of you, and mine are usually pretty sweet, so buckle up.  
+{{player_name}}: I’m all ears. 
+Rick: I know that we both smoked together sometimes, and you told me while you weren’t all there in the head that there was some bad family incident you were connected to, man.  I still don’t know what it was, but you said you hurt someone you love pretty badly–mentally, physically, those deets you wouldn’t share.
+Rick: Can you remember any details?
+- No… no, I can’t.  
+	{{player_name}}: I’m trying, but nothing solid is coming up.  My mind is very hazy right now, and I can’t recall many specifics from the mortal plane.
+	Rick: That’s what I expected, dude.  Others have come before you saying the same things, and others will probably do the same after you.  But I do have something to share with you that I found before you approached me. A scrawling on a wall–probably written by the Watchman, or some other crazy denizen of this place.  It said the word “GUILT.”  I’m guessing that bad deed you did has been weighing pretty heavy on you.  You must remember something, maybe from right when you first woke up in this place?
+	{{player_name}}: I do feel a great weight, but I don’t know the specifics.  I even feel like there might have been some kind of vision, but I’ve got to try to recall it.
+	Rick: That’s the point of the journey, man.  Just keep going, really make sure to make the right choices–that part’s crazy important–and it’ll all become clear.
+	{{player_name}}: Thanks, Rick.
+	Rick: No problemo!  Good luck.
+	=> END
+- Yes, but it’s unclear.
+	Rick: Man, if you’re seeing hazy visions of the mortal plane, that may have been connected to your vision. 
+	{{player_name}}: A vision?
+	Rick: Yeah, a vision.  And I don’t mean eyesight, dude.  I mean a wild, supernatural re-experiencing of a fateful event.  And if you had one of those, that’s your first major clue on why you’re here.
+	{{player_name}}: Thank you, I’ll keep that in mind.  I’ll try to recall this vision, if I can.
+	Rick: That’s a good idea, man!  Also, there’s something I remembered earlier, when I brought up how we sometimes smoked together outside during our work breaks.  Radical times.
+	{{player_name}}: What did you recall?
+	Rick: Well, I recalled that sometimes you would randomly leave whichever area we spent our break in on any given day, after you started or received a phone call.  I don’t know why you did that–and you likely don’t know either, due to your hazy memory–but I remember you seemed pretty angry!  You were yelling wild things back and forth if I remember, and this happened often, but because you always left the room, I never caught what the actual convo was about.  I don’t mean to lecture, dude, but those calls seemed to be pretty rude.
+	Rick: Oh, and if I recall, this all started happening after that bad family incident you told me about.  Maybe that’ll help in your gnarly quest down here.  
+	{{player_name}}: Well… thanks for letting me know about all this.  I don’t remember the specifics of what you’re talking about, but I’ll keep it in mind.  Was I really being that abrasive?
+	Rick: Perhaps, man.  I just can’t help but wonder if whoever you were yelling at–and who seemed to yell back at you–was connected to that big bad deed you did.  Part of it, affected by it, who knows?
+	{{player_name}}: Maybe something like that really is the case.  Thanks for telling me all this, Rick.
+	Rick: Glad to be of service, man!  I wish you plenty of luck in going back to the mortal plane.			
+	=> END

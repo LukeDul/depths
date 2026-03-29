@@ -1,0 +1,8 @@
+~ start
+{{player_name}}: A note. I recognize the handwriting {{player_name}}
+- read it
+	Mom and Dad, \n I’m going to Mr. Eli’s house. M said I was bugging her and that I should leave her alone. I asked her if I could go and she said it was fine with her. I didn’t want to ask her to drive me because she’s mad at me that I keep getting in her hair. I’m fine on my own anyway. Mr. Eli is always nice to me. I’ll be back in time for dinner. \n Love, \n Agnes
+	{{player_name}}: Agnes…I know that name.
+	{{player_name}}: This is important. There’s something I need to do. But what is it?
+- tear it up 
+=> END

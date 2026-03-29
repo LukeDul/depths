@@ -52,7 +52,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="Theme" id="Theme_qq3yp"]
-default_font_size = 20
+default_font_size = 30
 Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
 Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
 Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
@@ -189,9 +189,9 @@ anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -380.0
-offset_top = 699.0
+offset_top = 751.0
 offset_right = -35.0
-offset_bottom = -61.0
+offset_bottom = -9.0
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_vertical = 8

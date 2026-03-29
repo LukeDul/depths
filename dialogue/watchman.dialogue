@@ -1,0 +1,52 @@
+~ start
+Watchman: Welcome.
+Who are you?
+Watchman: I am the Watchman.
+Where am I? What is this place?
+Watchman: This is the Haven. At long last, you have arrived.
+Arrived? What do you mean? Where did I come from? I don’t remember.
+Watchman: No. You have forgotten, like all those who come to the Haven. As you passed through the arch, your memories were shaken loose by the Great Wind, and the Great Stream carried them away.
+Why?
+Watchman: To help you on your journey.
+What journey?
+Watchman: Beyond, of course.
+- Beyond? You mean I’m dead?
+	Watchman: If it helps you to think of it that way. But you are much more than dead. In fact, you may be more alive than you know.
+- What is that supposed to mean?
+	Watchman: In your whole life, you have never meant as much as you do right now. What you do from here has the power to change everything.
+- I don’t feel alive.
+	Watchman: You feel right now as you are meant to feel: blank. You are like an empty glass, waiting to be filled. You are pure potential. 
+- Beyond? You mean there’s more?
+	Watchman: Oh yes. The Haven is not the end. It is a between-place, a bridge. You must cross over it to the other side.
+	- What’s on the other side?
+		Watchman: I cannot tell you. 
+		Why not?
+		Watchman: You wouldn’t understand. Not yet. And if you did, you wouldn’t believe me.
+- Why do I have to go through the Haven?
+	Watchman: You are not ready to pass on. Not yet. 
+- So what do I have to do?
+	Watchman: Once you pass on from this chamber. You will be on your own. The Haven will change as you make your way through it. Every room, every object in every room, will look to you as something that had meaning to you in your life. Learn from it what you can, do with it what you will. At the end, there will be a choice. By then, you will see whether you have found what you need to make it. Then you will move on.
+- Are there other souls in the Haven?
+	Watchman: Yes, many. They are all on the same journey as you. You will only recognize the ones who were important to you. The others will ignore you.
+- How much time do I have?
+	Watchman: Time is a strange thing in the Haven. It is best not to think about it. You will have all the time you need.
+- What happens if I choose wrong?
+	Watchman: It is impossible to tell. Something terrible always happens to those who make an unfortunate choice. Some keep moving, others try to reverse it, and the rest stay in the Haven forever, out of guilt.
+- Who are you, really?
+	Watchman: You’ll find out, soon enough. For now, think of me as a guide, a keeper, nothing more.
+- How am I supposed to do this? I don’t even know who I am.
+	Watchman: That is what you are here to find.
+- Do I have a name?
+	Watchman: Not anymore. You used to, on Earth. It will not help you here. If you wish, you may choose another.
+	- Choose a name 
+		do get_player_name()
+		Watchman: Very well, {{player_name}}.
+	- Do not
+		set player_name = "Nausicaa"
+		Watchman: Very well. Then I will name you. While you are here, you will be known as Nausicaa.
+	Watchman: You are almost ready. Before you go, take this.
+He gives you a mirror. You see your reflection. 
+do give_mirror()
+Watchman: As you pass through the Haven, it will change you too. As you learn, as you discover more about yourself, you will see it reflected in this mirror. Use it to keep yourself on the right path.
+He glides away. You are left alone. 
+=> END 

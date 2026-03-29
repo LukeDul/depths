@@ -44,7 +44,7 @@ var past_text: String = ""
 var dialogue_line: DialogueLine:
 	set(value):
 		if value: 
-			if dialogue_line: 
+			if dialogue_line and dialogue_line.responses.is_empty():
 				past_text += dialogue_line.character + "\n" + dialogue_line.text + "\n\n"
 			dialogue_line = value
 			past_dialogue_label.text = past_text
@@ -218,6 +218,11 @@ func _on_balloon_gui_input(event: InputEvent) -> void:
 
 
 func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
+	# Append NPC prompt first (setter skips it since it has responses), then player choice
+	if dialogue_line:
+		past_text += dialogue_line.character + "\n" + dialogue_line.text + "\n\n"
+	past_text += "> " + response.text + "\n\n"
+	past_dialogue_label.text = past_text
 	next(response.next_id)
 
 
